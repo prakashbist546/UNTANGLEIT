@@ -13,6 +13,7 @@
 		F71DCAF12750A81B00DDA53D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71DCAEF2750A81B00DDA53D /* Main.storyboard */; };
 		F71DCAF32750A81D00DDA53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F71DCAF22750A81D00DDA53D /* Assets.xcassets */; };
 		F71DCAF62750A81D00DDA53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F71DCAF42750A81D00DDA53D /* LaunchScreen.storyboard */; };
+		F778C7522750D6E5004E5850 /* ConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F778C7512750D6E4004E5850 /* ConnectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F71DCAF22750A81D00DDA53D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F71DCAF52750A81D00DDA53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F71DCAF72750A81D00DDA53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F778C7512750D6E4004E5850 /* ConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				F71DCAE92750A81B00DDA53D /* AppDelegate.swift */,
 				F71DCAEB2750A81B00DDA53D /* SceneDelegate.swift */,
 				F71DCAED2750A81B00DDA53D /* ViewController.swift */,
+				F778C7512750D6E4004E5850 /* ConnectionView.swift */,
 				F71DCAEF2750A81B00DDA53D /* Main.storyboard */,
 				F71DCAF22750A81D00DDA53D /* Assets.xcassets */,
 				F71DCAF42750A81D00DDA53D /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				F71DCAEE2750A81B00DDA53D /* ViewController.swift in Sources */,
 				F71DCAEA2750A81B00DDA53D /* AppDelegate.swift in Sources */,
+				F778C7522750D6E5004E5850 /* ConnectionView.swift in Sources */,
 				F71DCAEC2750A81B00DDA53D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,23 +291,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 656FPGZV4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Untangler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "UNTANGLE IT";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmartSolar.Untangler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prakash.Untangler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,23 +323,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 656FPGZV4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Untangler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "UNTANGLE IT";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SmartSolar.Untangler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prakash.Untangler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
