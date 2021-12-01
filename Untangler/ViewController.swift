@@ -64,7 +64,7 @@ class ViewController: UIViewController {
 
         ])
         
-        view.backgroundColor = .darkGray
+        view.backgroundColor = UIColor(named: "ThemeColor")
         levelUp()
     }
     
@@ -175,7 +175,8 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
+        let generator = UIImpactFeedbackGenerator(style: .heavy)
+        generator.impactOccurred()
         return true
     }
     
@@ -199,6 +200,8 @@ class ViewController: UIViewController {
             }
         } else {
             //still playing
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.warning)
             score -= 1
         }
     }
